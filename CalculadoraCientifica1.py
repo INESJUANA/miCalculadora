@@ -1,17 +1,9 @@
 from tkinter import *
 from math import *
 
-Botonf=0
-def v():
-    global Botonf
-    Botonf=Botonf+1
-    if Botonf!=0:
-        ventana2=Tk()
-        ventana2.title("transformacion de temperaturas")
-        ventana2.geometry("50x50")
 ventana = Tk()
 ventana.title("Calculadora Cientifica con Python")
-ventana.geometry("400x270")
+ventana.geometry("400x370")
 ventana.configure(background="ivory4")
 color_boton=("gray90")
 
@@ -67,7 +59,8 @@ botoncoma=Button(ventana, text=",", bg=color_boton, width=an, height=al,command=
 botonporc=Button(ventana, text="%", bg=color_boton, width=an, height=al,command=lambda:bclik("%")).place(x=104, y=226)
 botonln=Button(ventana, text="ln", bg=color_boton, width=an, height=al,command=lambda:bclik("( -32)/1.8")).place(x=151, y=226)
 botonsuma=Button(ventana, text="+", bg=color_boton, width=an, height=al,command=lambda:bclik("+")).place(x=198, y=226)
-botonresul=Button(ventana, text="=", bg=color_boton, width=an, height=al,command=operacion).place(x=245, y=226)
+
+botonresul=Button(ventana, text="=", bg=color_boton, width=an, height=al,command=operacion).place(x=10, y=268)
 
 
 
