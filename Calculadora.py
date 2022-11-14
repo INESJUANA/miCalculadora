@@ -1,4 +1,18 @@
+from tkinter import *
+
+ventana = Tk()
+ventana.geometry("500x400")
+ventana.title("Calculadora Cientifica con Python")
+boton1=Button(ventana,text="Inicio")
+boton1.grid(row=0,column=0)
+boton1
+ventana.mainloop()
+
+
+
 import os
+
+
 #---------- por aca van las funciones ----------
 def sumar():
     numero1 = int(input("ingrese el primer numero: "))
